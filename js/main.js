@@ -12,7 +12,7 @@ $('document').ready(()=>{
     $('#tabla').DataTable({
         "ajax": {
             "method":"POST",
-            "url":"./backend/buscar.php",
+            "url":"https://behmio.000webhostapp.com/api/backend/buscar.php",
         },
         "columns":[
             {"data":"id"},

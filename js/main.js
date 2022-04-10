@@ -31,7 +31,7 @@ let potencia = document.getElementById('potencia');
 let mensaje = document.getElementById('mensaje'); mensaje
 let ax = 0;
 let v = document.getElementById('valor');
-potencia.addEventListener('input', (e)=>{
+potencia.addEventListener('change', (e)=>{
     console.log(potencia.value);
     let dataString = "status=" + potencia.value;
     

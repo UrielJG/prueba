@@ -3,7 +3,7 @@ $('document').ready(()=>{
     $.ajax
     ({
         type: "GET",
-        url: "./backend/buscar.php",
+        url: "https://behmio.000webhostapp.com/api/backend/buscar.php",
         success: function (res) {
             let grafbar=JSON.parse(res);
             potenciometro(grafbar.bar);
@@ -42,7 +42,7 @@ potencia.addEventListener('input', (e)=>{
       $.ajax
       ({
           type: "GET",
-          url: "./backend/setStatusSlider.php",
+          url: "https://behmio.000webhostapp.com/api/backend/setStatusSlider.php",
           data: dataString,
           success: function (res) {
               console.log(res);
@@ -148,7 +148,7 @@ recognition.onresult = (e) => {
             $.ajax
             ({
                 type: "GET",
-                url: "./backend/setStatusSlider.php",
+                url: "https://behmio.000webhostapp.com/api/backend/setStatusSlider.php",
                 data: dataString,
                 success: function (res) {
                     console.log(res);
